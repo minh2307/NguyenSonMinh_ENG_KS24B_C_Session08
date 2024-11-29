@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	int a[8] = {1,5,23,2,3,5,1,2};
+	int maxCount;
+	int item;
+	for(int i=0;i<7;i++){
+		int count=0;
+		for(int j=0; j<7 ; j++){
+			if(a[i]==a[j]){
+				count++;
+			}
+		}
+		if(count>maxCount){
+			maxCount=count;
+			item=a[i];
+		}
+	}
+	printf("%d",item);
+	
+return 0;
+}
