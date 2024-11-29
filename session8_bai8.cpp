@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int m,a[1000][1000];	
+	int m,a[10][10];	
 		scanf("%d",&m);
 	for(int i=0; i < m ; i++){
 		for(int j=0; j < m; j++){
